@@ -27,3 +27,6 @@ The current custom commands are to give easy access to linking to official suppo
 
 always happy to help and get help on my scripts.
 
+### username simulaities.py
+This is to be included into the bot at a later date to help stop scammers currently not included as a feature
+
