@@ -1,13 +1,10 @@
-# new user DM, regex for adlut word censorship, check channels for discord server urls and keywords, check for badwords.
-
 import nextcord
 from nextcord.ext import commands
 import http.client
 import json
 import re
-# from Levenshtein import distance as levenshtein_distance # for simular username checking against mod's/admin role members(coming soon)
 
-# Intents specify the events your bot will receive (define the bit)
+# Intents specify the events your bot will receive (define the bot)
 intents = nextcord.Intents.default()
 intents.members = True
 intents.messages = True
