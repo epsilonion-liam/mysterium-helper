@@ -1,4 +1,4 @@
-# pip install nextcord python-Levenshtein
+# install this -> pip install nextcord python-Levenshtein
 
 
 import nextcord
