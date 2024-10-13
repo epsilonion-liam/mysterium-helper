@@ -6,8 +6,8 @@ This bot is tailored for the mysterium network and can be adapted to any discord
 The feature list is are complete and more will be coming soon.
 
 * Sends a DM with community guidelines to new server members.
-* Looks for adult words and sends a warning and ban's repeat offenders.
-* Looks for messages with discord server URL's and keywords present in a message then deletes message and warns user, eventually ban's repeat offenders with the exemption on admin, mode, wizard, pro wizard and myst team roles.
+* Looks for adult words usinf regex patterns and sends a warning and ban's repeat offenders.
+* Looks for messages with discord server URL's with regex pattern and keywords present in a message then deletes message and warns user, eventually ban's repeat offenders with the exemption on admin, mode, wizard, pro wizard and myst team roles.
 * Get network stats with ease of using custom commands "!stats".
 * Get your nodes stats with ease of using custom commands "!nodestats node_ID".
 
