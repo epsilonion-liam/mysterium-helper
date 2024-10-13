@@ -1,6 +1,6 @@
 # mysterium-helper
 Discord helper bot for the Mysterium network.
-This bit is tayleerd for the mysterium network.
+This bot is tailored for the mysterium network.
 
 ## Bot Features.
 The feature list is are complete and more will be coming soon.
