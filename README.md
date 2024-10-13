@@ -2,6 +2,8 @@
 Discord helper bot for the Mysterium network.
 This bot is tailored for the mysterium network and can be adapted to any discord server.
 
+**Install nextcord.py** as discord.py is not maintained anymore.
+
 ## Bot Features.
 The feature list is are complete and more will be coming soon.
 
