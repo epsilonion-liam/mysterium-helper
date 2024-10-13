@@ -9,7 +9,7 @@ The feature list is are complete and more will be coming soon.
 * Looks for adult words and sends a warning and ban's repeat offenders.
 * Looks for messages with discord server URL's and keywords present in a message then deletes message and warns user, eventually ban's repeat offenders with the exemption on admin, mode, wizard, pro wizard and myst team roles.
 * Get network stats with ease of using custom commands "!stats".
-* Get your nodes stats with ease of using custom commands "!nodestats <node ID>".
+* Get your nodes stats with ease of using custom commands "!nodestats node_ID".
 
 ### Requested Features
 * Username similarity of mods, admins, wizards and myst team in an efford to remove scammers from the server.
