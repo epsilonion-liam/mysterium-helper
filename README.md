@@ -33,3 +33,6 @@ always happy to help and get help on my scripts.
 ### username simulaities.py
 This is to be included into the bot at a later date to help stop scammers currently not included as a feature
 
+### Installation 
+* This script uses nextcord.py instead of dicord.py as that is nolonger maintained.
+
