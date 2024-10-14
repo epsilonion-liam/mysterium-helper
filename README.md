@@ -13,6 +13,7 @@ The feature list is are complete and more will be coming soon.
 * Get network stats with ease of using custom commands "!stats".
 * Get your nodes stats with ease of using custom commands "!nodestats node_ID".
 * Checks unicode into what it would represent in text against the bad word list and deletes message and reports to a log channel
+* !purge command deletes messages from a user.
 
 ### Requested Features Not implemented yet
 * Username similarity of mods, admins, wizards and myst team in an efford to remove scammers from the server.
