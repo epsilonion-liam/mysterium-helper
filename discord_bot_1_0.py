@@ -3,6 +3,7 @@ from nextcord.ext import commands
 import http.client
 import json
 import re
+import message_purger
 
 # Intents specify the events your bot will receive (define the bot)
 intents = nextcord.Intents.default()
@@ -282,5 +283,8 @@ async def on_message(message):
 @bot.event
 async def on_message_edit(before, after):
     await check_message(after)
+
+# Load message purger plugin
+message_purger.setup(bot)
 
 bot.run('your_BOT_code')
