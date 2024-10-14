@@ -12,8 +12,9 @@ The feature list is are complete and more will be coming soon.
 * Looks for messages with discord server URL's with regex pattern and keywords present in a message then deletes message and warns user, eventually ban's repeat offenders with the exemption on admin, mode, wizard, pro wizard and myst team roles.
 * Get network stats with ease of using custom commands "!stats".
 * Get your nodes stats with ease of using custom commands "!nodestats node_ID".
+* Checks unicode into what it would represent in text against the bad word list and deletes message and reports to a log channel
 
-### Requested Features
+### Requested Features Not implemented yet
 * Username similarity of mods, admins, wizards and myst team in an efford to remove scammers from the server.
 
 ## Custom command's
