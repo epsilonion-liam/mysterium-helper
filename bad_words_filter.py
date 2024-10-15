@@ -2,13 +2,13 @@ import nextcord
 import re
 import asyncio
 
-def load_bad_words():
-    with open('bad_words.txt', 'r') as file:
+def load_blocklist(filepath):
+    with open(filepath, 'r') as file:
         return [line.strip() for line in file]
 
-bad_words = load_bad_words()
+bad_words = load_blocklist('bad_words.txt')
 
-# Create regex pattern for bad words, ignoring case
+# Create regex pattern for bad words and phrases, ignoring case
 bad_words_pattern = re.compile('|'.join(re.escape(word) for word in bad_words), re.IGNORECASE)
 
 # Track user offenses
@@ -19,10 +19,10 @@ async def handle_bad_words(message):
     if message.author.bot:
         return
 
-    # Check for bad words
+    # Check for bad words or phrases
     if bad_words_pattern.search(message.content):
         await message.delete()
-        await message.channel.send(f"{message.author.mention}, this is a family-friendly community. Please don't post offensive words.")
+        await message.channel.send(f"{message.author.mention}, this is a family-friendly community. Please don't post offensive words or phrases.")
         
         user_id = message.author.id
         if user_id in user_offenses:
