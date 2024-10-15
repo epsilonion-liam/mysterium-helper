@@ -6,7 +6,7 @@ Modular plugin design to disable features that are not required.
 ## What does this bot do?
 This bot has several main features.
 
-- Regex on Adult word censorship (ignores case of the words) gives "Mute members role" after 5 offences by member for 20 mins.
+- Regex on Adult word censorship (ignores case of the words) gives "Mute members role" after 5 offences by member for 20 mins applies to single words and phrases.
 - Unicode - looks at the adult word list and compares to the Unicode and deletes if necessary.
 - URL blocker - strips http/https off URL's and compares to URL text file and deletes message if match found.
 - Message Purge for channel - Purges messages of a UsersID  with the !purge <userID> command (Only Admin, mod, mysterium wizard roles).
