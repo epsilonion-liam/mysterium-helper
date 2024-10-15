@@ -1,39 +1,45 @@
-# mysterium-helper
-Discord helper bot for the Mysterium network.
-This bot is tailored for the mysterium network and can be adapted to any discord server.
+# Helper Discord Bot
+This bot is designed to help moderate and combat spam and scams we see on discord everyday.
 
-**Install nextcord.py** as discord.py is not maintained anymore.
+## What does this bot do?
+This bot has several main features.
 
-## Bot Features.
-The feature list is are complete and more will be coming soon.
+- Adult and bad word cesorship with Redex (builds patterns to recognise upper and lowercase ways of spelling a bad word), able to expand list of words to recognise.
+- Disorc invite server URL spupport scams and spam in messages and DM's- Matches a pattern for discord server URL's and keywords in the same message, deletes the message and warns the user then bans them if they persist, able to expand keywords but allows specific roles to send invites such as mods and admins.
+- New server member DM with welcome, community guidelines and relitive information to your community.
+- Username simularity checker logs profiles that have simular usernames of members with simular roles such as admins and moderators to help prevent fake support and associated scam's
 
-* Sends a DM with community guidelines to new server members.
-* Looks for adult words usinf regex patterns and sends a warning and ban's repeat offenders.
-* Looks for messages with discord server URL's with regex pattern and keywords present in a message then deletes message and warns user, eventually ban's repeat offenders with the exemption on admin, mode, wizard, pro wizard and myst team roles.
-* Get network stats with ease of using custom commands "!stats".
-* Get your nodes stats with ease of using custom commands "!nodestats node_ID".
-* Checks unicode into what it would represent in text against the bad word list and deletes message and reports to a log channel
-* !purge command deletes messages from a user.
+## Request a feature
+request a feature by adding it to the issue system.
 
-### Requested Features Not implemented yet
-* Username similarity of mods, admins, wizards and myst team in an efford to remove scammers from the server.
+## Install
+pip install nextcord python-Levenshtein
 
-## Custom command's
-The current custom commands are to give easy access to linking to official support pages, this list will grow eventually:
+### INSTALL Nextcord
 
-* !rundocker
-* !runlinux
-* !backupid
-* !stakingmyst
-* !nodesafety
-* !mystopennat
-* !help
+Installing¶
+You can get the library directly from PyPI:
 
-always happy to help and get help on my scripts.
+content_copy
+python3 -m pip install -U nextcord
+If you are using Windows and have not installed Python to PATH, then the following should be used instead:
 
-### username simulaities.py
-This is to be included into the bot at a later date to help stop scammers currently not included as a feature
+content_copy
+py -3 -m pip install -U nextcord
+To get voice support, you should use nextcord[voice] instead of nextcord, e.g.
 
-### Installation 
-* This script uses nextcord.py instead of dicord.py as that is nolonger maintained.
+content_copy
+python3 -m pip install -U nextcord[voice]
+On Linux environments, installing voice requires getting the following dependencies:
 
+libffi
+
+libnacl
+
+python3-dev
+
+For a Debian-based system, the following command will get these dependencies:
+
+content_copy
+$ apt install libffi-dev libnacl-dev python3-dev
+Remember to check your permissions!
