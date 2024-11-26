@@ -4,7 +4,7 @@ import requests
 import os
 import logging
 
-# Bot setup
+# Bot setup (included some intents for my other plugins)
 intents = nextcord.Intents.default()
 intents.guilds = True
 intents.message_content = True
@@ -15,7 +15,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 # Function to load all extensions from the plugins folder
 def load_extensions():
     print("Loading extensions...")
-    for filename in os.listdir('/app/plugins'):
+    for filename in os.listdir('./plugins'):
         if filename.endswith('.py'):
             extension_name = f'plugins.{filename[:-3]}'
             print(f"Loading extension: {extension_name}")
