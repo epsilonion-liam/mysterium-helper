@@ -25,8 +25,6 @@ def load_extensions():
             except Exception as e:
                 print(f"Failed to load extension {extension_name}: {e}")
 
-
-
 # Load all plugins
 load_extensions()
 
