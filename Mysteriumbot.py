@@ -1,6 +1,5 @@
 import nextcord
 from nextcord.ext import commands, tasks
-import mysql.connector
 import requests
 import os
 import logging
